@@ -1,0 +1,454 @@
+/*=========================================
+  AI STEM Innovation
+  Responsive Stylesheet
+==========================================*/
+
+/*============= 1200px =============*/
+
+@media (max-width:1200px){
+
+.container{
+
+width:95%;
+
+}
+
+.hero-text h1{
+
+font-size:48px;
+
+}
+
+.section-title{
+
+font-size:34px;
+
+}
+
+}
+
+/*============= 992px =============*/
+
+@media (max-width:992px){
+
+.hero-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.hero-image{
+
+order:-1;
+
+}
+
+.hero-image img{
+
+max-width:420px;
+
+margin:auto;
+
+}
+
+.feature-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.course-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.contact-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.stats .container{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.page-banner h1{
+
+font-size:42px;
+
+}
+
+}
+
+/*============= 768px =============*/
+
+@media (max-width:768px){
+
+header{
+
+padding:0;
+
+}
+
+header .container{
+
+padding:15px 0;
+
+}
+
+.menu-btn{
+
+display:block;
+
+}
+
+nav{
+
+position:absolute;
+
+top:100%;
+
+left:0;
+
+width:100%;
+
+background:#fff;
+
+display:none;
+
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+}
+
+nav.active{
+
+display:block;
+
+}
+
+nav ul{
+
+flex-direction:column;
+
+gap:0;
+
+}
+
+nav ul li{
+
+border-bottom:1px solid #eee;
+
+}
+
+nav ul li a{
+
+display:block;
+
+padding:18px 25px;
+
+}
+
+.hero{
+
+padding-top:140px;
+
+}
+
+.hero-text h1{
+
+font-size:40px;
+
+}
+
+.hero-text p{
+
+font-size:16px;
+
+}
+
+.section-title{
+
+font-size:30px;
+
+}
+
+.page-banner{
+
+padding-top:140px;
+
+}
+
+.page-banner h1{
+
+font-size:36px;
+
+}
+
+.card,
+
+.course{
+
+padding:25px;
+
+}
+
+.cta h2{
+
+font-size:32px;
+
+}
+
+.cta p{
+
+font-size:16px;
+
+}
+
+.footer-grid{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.footer-grid .social{
+
+justify-content:center;
+
+}
+
+}
+
+/*============= 600px =============*/
+
+@media (max-width:600px){
+
+.feature-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.course-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.stats .container{
+
+grid-template-columns:1fr;
+
+}
+
+.hero-text h1{
+
+font-size:34px;
+
+}
+
+.logo h2{
+
+font-size:24px;
+
+}
+
+.section-title{
+
+font-size:28px;
+
+}
+
+.stat h2{
+
+font-size:40px;
+
+}
+
+.testimonial-box{
+
+padding:25px;
+
+}
+
+.testimonial-box p{
+
+font-size:17px;
+
+}
+
+.contact-form,
+
+.contact-info{
+
+padding:25px;
+
+}
+
+.info-box{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:10px;
+
+}
+
+.info-box i{
+
+margin-bottom:8px;
+
+}
+
+.map iframe{
+
+height:320px;
+
+}
+
+.btn{
+
+padding:12px 28px;
+
+font-size:15px;
+
+}
+
+}
+
+/*============= 480px =============*/
+
+@media (max-width:480px){
+
+.hero{
+
+padding-top:130px;
+
+}
+
+.hero-text h1{
+
+font-size:30px;
+
+line-height:1.3;
+
+}
+
+.hero-text p{
+
+font-size:15px;
+
+}
+
+.page-banner h1{
+
+font-size:30px;
+
+}
+
+.section-title{
+
+font-size:26px;
+
+}
+
+.card h3,
+
+.course h3{
+
+font-size:20px;
+
+}
+
+.card i{
+
+font-size:40px;
+
+}
+
+.cta h2{
+
+font-size:28px;
+
+}
+
+.cta p{
+
+font-size:15px;
+
+}
+
+.social a{
+
+width:40px;
+
+height:40px;
+
+font-size:16px;
+
+}
+
+.copyright{
+
+font-size:14px;
+
+padding:20px;
+
+}
+
+}
+
+/*============= 360px =============*/
+
+@media (max-width:360px){
+
+.hero-text h1{
+
+font-size:26px;
+
+}
+
+.page-banner h1{
+
+font-size:26px;
+
+}
+
+.btn{
+
+display:block;
+
+width:100%;
+
+text-align:center;
+
+}
+
+.card,
+
+.course{
+
+padding:20px;
+
+}
+
+.logo h2{
+
+font-size:20px;
+
+}
+
+}
