@@ -1,10 +1,10 @@
-// firebase-config.js
-
-export const firebaseConfig = {
-  apiKey: "YOUR_FIREBASE_API_KEY",
-  authDomain: "YOUR_PROJECT_ID.firebaseapp.com",
-  projectId: "YOUR_PROJECT_ID",
-  storageBucket: "YOUR_PROJECT_ID.firebasestorage.app",
-  messagingSenderId: "YOUR_MESSAGING_SENDER_ID",
-  appId: "YOUR_FIREBASE_APP_ID"
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyD2h_jKzKfs9JkkY-l9xKTCwUQPrEvoTME",
+  authDomain: "professional-ai-robotics.firebaseapp.com",
+  projectId: "professional-ai-robotics",
+  storageBucket: "professional-ai-robotics.firebasestorage.app",
+  messagingSenderId: "1064920733703",
+  appId: "1:1064920733703:web:10ec66f8c8a3b89112b2a2",
+  measurementId: "G-C2JTDW1232"
 };
