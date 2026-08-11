@@ -1,0 +1,379 @@
+/* chatbot.css */
+
+#ai-chatbot {
+  position: relative;
+  z-index: 99999;
+}
+
+
+/* Floating button */
+
+.chatbot-toggle {
+  position: fixed;
+
+  right: 25px;
+  bottom: 25px;
+
+  width: 62px;
+  height: 62px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #111827;
+  color: #ffffff;
+
+  font-size: 28px;
+
+  cursor: pointer;
+
+  box-shadow:
+    0 8px 30px rgba(0, 0, 0, 0.25);
+
+  transition:
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+
+.chatbot-toggle:hover {
+
+  transform: translateY(-3px);
+
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.3);
+}
+
+
+/* Chat window */
+
+.chatbot-window {
+
+  position: fixed;
+
+  right: 25px;
+  bottom: 100px;
+
+  width: 370px;
+  max-width: calc(100vw - 30px);
+
+  height: 560px;
+  max-height: calc(100vh - 130px);
+
+  display: flex;
+  flex-direction: column;
+
+  background: #ffffff;
+
+  border-radius: 18px;
+
+  overflow: hidden;
+
+  box-shadow:
+    0 20px 60px rgba(0, 0, 0, 0.25);
+
+  opacity: 0;
+  visibility: hidden;
+
+  transform:
+    translateY(20px)
+    scale(0.96);
+
+  transition:
+    all 0.25s ease;
+}
+
+
+.chatbot-window.open {
+
+  opacity: 1;
+  visibility: visible;
+
+  transform:
+    translateY(0)
+    scale(1);
+}
+
+
+/* Header */
+
+.chatbot-header {
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 17px 18px;
+
+  background: #111827;
+  color: #ffffff;
+}
+
+
+.chatbot-header strong {
+
+  display: block;
+
+  font-size: 16px;
+}
+
+
+.chatbot-header small {
+
+  display: block;
+
+  margin-top: 3px;
+
+  opacity: 0.75;
+
+  font-size: 11px;
+}
+
+
+.chatbot-close {
+
+  border: none;
+
+  background: transparent;
+
+  color: #ffffff;
+
+  font-size: 26px;
+
+  cursor: pointer;
+}
+
+
+/* Messages */
+
+.chatbot-messages {
+
+  flex: 1;
+
+  overflow-y: auto;
+
+  padding: 18px;
+
+  background: #f5f7fb;
+}
+
+
+.chat-message {
+
+  display: flex;
+
+  margin-bottom: 12px;
+}
+
+
+.chat-message.user {
+
+  justify-content: flex-end;
+}
+
+
+.chat-message.bot {
+
+  justify-content: flex-start;
+}
+
+
+.chat-bubble {
+
+  max-width: 82%;
+
+  padding: 11px 13px;
+
+  border-radius: 14px;
+
+  font-size: 14px;
+
+  line-height: 1.5;
+
+  white-space: pre-wrap;
+}
+
+
+.chat-message.bot .chat-bubble {
+
+  background: #ffffff;
+
+  color: #1f2937;
+
+  border-bottom-left-radius: 4px;
+
+  box-shadow:
+    0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+
+.chat-message.user .chat-bubble {
+
+  background: #111827;
+
+  color: #ffffff;
+
+  border-bottom-right-radius: 4px;
+}
+
+
+/* Suggestions */
+
+.chatbot-suggestions {
+
+  display: flex;
+
+  gap: 7px;
+
+  padding: 9px 12px;
+
+  overflow-x: auto;
+
+  background: #ffffff;
+
+  border-top: 1px solid #eeeeee;
+}
+
+
+.chatbot-suggestions button {
+
+  flex-shrink: 0;
+
+  padding: 6px 10px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 20px;
+
+  background: #ffffff;
+
+  cursor: pointer;
+
+  font-size: 12px;
+}
+
+
+.chatbot-suggestions button:hover {
+
+  background: #f3f4f6;
+}
+
+
+/* Input */
+
+#chatbot-form {
+
+  display: flex;
+
+  padding: 12px;
+
+  gap: 8px;
+
+  background: #ffffff;
+
+  border-top: 1px solid #eeeeee;
+}
+
+
+#chatbot-input {
+
+  flex: 1;
+
+  min-width: 0;
+
+  padding: 11px 13px;
+
+  border: 1px solid #d1d5db;
+
+  border-radius: 10px;
+
+  outline: none;
+
+  font-size: 14px;
+}
+
+
+#chatbot-input:focus {
+
+  border-color: #6b7280;
+
+  box-shadow:
+    0 0 0 3px rgba(107, 114, 128, 0.1);
+}
+
+
+#chatbot-form button {
+
+  width: 43px;
+
+  border: none;
+
+  border-radius: 10px;
+
+  background: #111827;
+
+  color: #ffffff;
+
+  cursor: pointer;
+
+  font-size: 18px;
+}
+
+
+/* Firebase contact status */
+
+.firebase-form-status {
+
+  margin-top: 12px;
+
+  padding: 10px 12px;
+
+  border-radius: 8px;
+
+  font-size: 14px;
+}
+
+
+.firebase-form-status.success {
+
+  background: #dcfce7;
+
+  color: #166534;
+}
+
+
+.firebase-form-status.error {
+
+  background: #fee2e2;
+
+  color: #991b1b;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  .chatbot-toggle {
+
+    right: 16px;
+    bottom: 16px;
+
+    width: 56px;
+    height: 56px;
+  }
+
+
+  .chatbot-window {
+
+    right: 10px;
+    bottom: 82px;
+
+    width: calc(100vw - 20px);
+
+    height: calc(100vh - 105px);
+
+    max-height: none;
+  }
+
+}
